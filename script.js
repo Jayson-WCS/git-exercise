@@ -52,6 +52,7 @@ function printSentence(arr) {
     );
   }
 }
+
 printSentence(animaux);
 
 /* ---------------   BONUS  -------------------- */
