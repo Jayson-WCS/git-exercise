@@ -39,19 +39,20 @@ for (let i = 0; i < listeAnimaux.length; i++) {
   console.log(`Je suis un ${listeAnimaux[i]}`);
 }
 
-function printSentence() {
-  for (let i = 0; i < animaux.length; i++) {
+function printSentence(arr) {
+  for (let i = 0; i < arr.length; i++) {
     console.log(
-      `Je suis un ${animaux[i].famille} j'ai ${animaux[i].patte} pattes et ${
-        animaux[i].patte === 4
+      `Je suis un ${arr[i].race}, j'ai ${arr[i].patte} pattes et ${
+        arr[i].patte === 4
           ? "j'ai des poils"
-          : animaux[i].patte === 2
+          : arr[i].patte === 2
           ? "j'ai des plumes"
           : "j'ai des écailles"
       }`
     );
   }
 }
+printSentence(animaux);
 
 /* ---------------   BONUS  -------------------- */
 
@@ -117,5 +118,4 @@ const animaux2 = [
   },
 ];
 
-console.log(animaux2);
 printSentence(animaux2);
