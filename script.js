@@ -1,106 +1,121 @@
-console.log('coucou');
-
 /* ---------------   constante pour les exercices  -------------------- */
 
-const listeAnimaux = ['caniche', 'persan', 'canari', 'saumon'];
+const listeAnimaux = ["caniche", "persan", "canari", "saumon"];
 
 const animaux = [
   {
-    famille: 'chien',
+    famille: "chien",
     patte: 4,
     poils: true,
-    race: 'caniche',
+    race: "caniche",
   },
 
   {
-    famille: 'chat',
+    famille: "chat",
     patte: 4,
     poils: true,
-    race: 'persan',
+    race: "persan",
   },
 
   {
-    famille: 'oiseau',
+    famille: "oiseau",
     patte: 2,
     poils: false,
-    race: 'canari',
+    race: "canari",
   },
 
   {
-    famille: 'poisson',
+    famille: "poisson",
     patte: 0,
     poils: false,
-    race: 'saumon',
+    race: "saumon",
   },
 ];
 
 /* ---------------   EXERCICE 1  -------------------- */
 
 /* écrivez votre code ici */
+for (let i = 0; i < listeAnimaux.length; i++) {
+  console.log(`Je suis un ${listeAnimaux[i]}`);
+}
 
-
+function printSentence() {
+  for (let i = 0; i < animaux.length; i++) {
+    console.log(
+      `Je suis un ${animaux[i].famille} j'ai ${animaux[i].patte} pattes et ${
+        animaux[i].patte === 4
+          ? "j'ai des poils"
+          : animaux[i].patte === 2
+          ? "j'ai des plumes"
+          : "j'ai des écailles"
+      }`
+    );
+  }
+}
 
 /* ---------------   BONUS  -------------------- */
 
 const animaux2 = [
   {
-    famille: 'chien',
+    famille: "chien",
     patte: 4,
     poils: true,
-    race: 'dalmatien',
+    race: "dalmatien",
   },
 
   {
-    famille: 'chien',
+    famille: "chien",
     patte: 4,
     poils: true,
-    race: 'dobermann',
+    race: "dobermann",
   },
 
   {
-    famille: 'chat',
+    famille: "chat",
     patte: 4,
     poils: true,
-    race: 'siberien',
+    race: "siberien",
   },
 
   {
-    famille: 'chat',
+    famille: "chat",
     patte: 4,
     poils: true,
-    race: 'chartreux',
+    race: "chartreux",
   },
 
   {
-    famille: 'oiseau',
+    famille: "oiseau",
     patte: 2,
     poils: false,
-    race: 'rouge gorge',
+    race: "rouge gorge",
   },
   {
-    famille: 'oiseau',
+    famille: "oiseau",
     patte: 2,
     poils: false,
-    race: 'perroquet',
+    race: "perroquet",
   },
   {
-    famille: 'oiseau',
+    famille: "oiseau",
     patte: 2,
     poils: false,
-    race: 'faisan',
+    race: "faisan",
   },
 
   {
-    famille: 'poisson',
+    famille: "poisson",
     patte: 0,
     poils: false,
-    race: 'thon',
+    race: "thon",
   },
   {
-    famille: 'poisson',
+    famille: "poisson",
     patte: 0,
     poils: false,
-    race: 'bar',
+    race: "bar",
   },
 ];
 
+console.log(animaux2);
+printSentence(animaux2);
